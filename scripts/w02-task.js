@@ -6,7 +6,7 @@
 
 const fullName = 'Jorge Calvi';
 let currentYear = 2024;
-const profilePicture = '/images/my_photo.jpg';
+const profilePicture = 'images/my_photo.jpg';
 
 /* Step 3 - Element Variables */
 
