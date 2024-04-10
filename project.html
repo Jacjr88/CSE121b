@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>W06: Final Project</h1>
+    <h2>Consuming Meals API</h2>
+
+    <select id="filtered" title="Choose a data filter.">
+      <option value="" disabled selected>Category</option>
+      <option value="beef">Beef</option>
+      <option value="chicken">Chicken</option>
+      <option value="dessert">Dessert</option>
+      <option value="lamb">Lamb</option>
+      <option value="miscellaneous">Miscellaneous</option>
+      <option value="pasta">Pasta</option>
+      <option value="pork">Pork</option>
+      <option value="seafood">Seafood</option>
+      <option value="side">Side</option>
+      <option value="starter">Starter</option>
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="goat">Goat</option>
+    </select>
+
+    <h2 id="letter-bar"> 
+        <input type="button" class="letter" value="A">
+        <input type="button" class="letter" value="B">
+        <input type="button" class="letter" value="C">
+        <input type="button" class="letter" value="D">
+        <input type="button" class="letter" value="E">
+        <input type="button" class="letter" value="F">
+        <input type="button" class="letter" value="G">
+        <input type="button" class="letter" value="H">
+        <input type="button" class="letter" value="I">
+        <input type="button" class="letter" value="J">
+        <input type="button" class="letter" value="K">
+        <input type="button" class="letter" value="L">
+        <input type="button" class="letter" value="M">
+        <input type="button" class="letter" value="N">
+        <input type="button" class="letter" value="O">
+        <input type="button" class="letter" value="P">
+        <input type="button" class="letter" value="Q">
+        <input type="button" class="letter" value="R">
+        <input type="button" class="letter" value="S">
+        <input type="button" class="letter" value="T">
+        <input type="button" class="letter" value="U">
+        <input type="button" class="letter" value="V">
+        <input type="button" class="letter" value="W">
+        <input type="button" class="letter" value="X">
+        <input type="button" class="letter" value="Y">
+        <input type="button" class="letter" value="Z">		
+    </h2>
+
+    <div id="foods">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Week 05 - Fetching Temple Data | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>
